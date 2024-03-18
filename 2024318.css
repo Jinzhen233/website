@@ -1,20 +1,17 @@
-/* Disk shape */  
 .disk {  
   width: 100px;  
   height: 100px;  
-  background-color: #ff0000;  
+  background-color: #808080; 
   border-radius: 50%;  
 }  
   
-/* Egg shape */  
 .egg {  
   width: 120px;  
   height: 150px;  
-  background-color: #ffff00;  
+  background-color: #ffffcc; 
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;  
 }  
   
-/* Heart shape */  
 .heart {  
   position: relative;  
   width: 100px;  
@@ -29,8 +26,20 @@
   width: 52px;  
   height: 80px;  
   border-radius: 50px 50px 0 0;  
-  background: #ff00ff;  
+  background: #ff0000; 
 }  
+  
+.heart::before {  
+  left: 50px;  
+  transform: rotate(-45deg);  
+  transform-origin: 0 100%;  
+}  
+  
+.heart::after {  
+  left: 0;  
+  transform: rotate(45deg);  
+  transform-origin: 100% 100%;  
+}
   
 .heart::before {  
   left: 50px;  
