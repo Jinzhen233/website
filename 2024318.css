@@ -1,26 +1,22 @@
-
-.disk {  
+disk {  
   width: 100px;  
   height: 100px;  
   background-color: #ff6347;  
   border-radius: 50%;  
 }  
-  
-.egg {  
+  egg {  
   width: 120px;  
   height: 150px;  
   background-color: #ffcc00;  
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;  
 }  
-  
-.heart {  
+  heart {  
   position: relative;  
   width: 100px;  
   height: 90px;  
 }  
-  
-.heart::before,  
-.heart::after {  
+  heart::before,  
+  heart::after {  
   content: "";  
   position: absolute;  
   top: 40px;  
@@ -30,13 +26,13 @@
   background: #ff0066;  
 }  
   
-.heart::before {  
+  heart::before {  
   left: 50px;  
   transform: rotate(-45deg);  
   transform-origin: 0 100%;  
 }  
   
-.heart::after {  
+  heart::after {  
   left: 0;  
   transform: rotate(45deg);  
   transform-origin: 100% 100%;  
