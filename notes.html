@@ -1,0 +1,44 @@
+<script>
+   let a =[];
+   let associtive ={id:"123456",name:"Mike"};
+   let y ={"id":"123456", "name":"Mike"};
+   let z ={id:"123456", "Last name":"James"};
+   let w ={"Mike James":12121212, "Scott cave":21212121};
+
+   w["Mikeson"]=11112222;
+   document.write(w["john smith"]+"<br>");
+   for (let key in w)
+	document.write("key="+key+",value="+w[key]+"<br>");
+   //for (let v in w) document.write("value="+v+"<br>");
+   
+
+   for (let key in w)
+	if (w[key] == 21212121)
+		document.write(key+"has12121212<br>");
+
+   document.write("size of w ="+w.length+"<br>");
+   var x=0;
+   var Game = {
+   x:1,
+   y:2,
+   move:function(u,v){document.write(Game.x+","+Game.y+"<br>")}
+   }
+
+   Game.move(1,2);
+
+   Game.move = function(u,v){}
+
+
+
+   let h = setTimeout(functionname,2000);
+   setTimeout(function(){},1500);
+   setTimeout("Grame move("+ x +","+ y +")",2333);
+   var aa = [3,4,5,2,1];
+   document.write(aa[i]);
+
+   clearTimeout(h);
+
+   let  handle = setInterval(function(){},2000);
+   clearinterval(handle);
+   
+</script>
