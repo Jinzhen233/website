@@ -122,7 +122,7 @@ function movedisk(k) //k-th instruction
         let disk1 = My.$('layer' +topid1);
         x1 = disk1.style.left;
         y1 = disk1.style.top;
-        y1 = (parseInt(y1.substring(0, y1.length-2)) - THICKNESS) + 'px';
+        y1 = (parseInt(y1.substring(0, y1.length-2)) - THICKNESS+8) + 'px';
         let w1 = parseInt(disk1.style.width.replace(/px/,''));
         let w =  parseInt(disk.style.width.replace(/px/,''));
         let diff = (w1 - w)/2;
